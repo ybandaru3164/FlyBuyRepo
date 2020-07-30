@@ -18,30 +18,33 @@
 	</properties>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-					 <standaloneDeployment>
-				      	<muleHome>C:\mule-enterprise-standalone-4.3.0</muleHome>
-				      	<muleVersion>4.3.0</muleVersion>
-				     </standaloneDeployment>
-				</configuration>
-				<executions>
-					<execution>
-						<id>deploy</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+    <plugins>
+        <plugin>
+            <groupId>org.mule.tools.maven</groupId>
+            <artifactId>mule-maven-plugin</artifactId>
+            <version>${mule.maven.plugin.version}</version>
+            <extensions>true</extensions>
+            <configuration>
+             <standaloneDeployment>
+                <muleHome>C:\mule-enterprise-standalone-4.3.0</muleHome>
+                <muleVersion>4.3.0</muleVersion>
+             </standaloneDeployment>
+           </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <executions>
+            <execution>
+             <id>default-deploy</id>
+             <phase>deploy</phase>
+             <goals>
+              <goal>deploy</goal>
+             </goals>
+            </execution>
+          </executions>  
+        </plugin>
+    </plugins>
+</build>
 
 	<dependencies>
         <dependency>
