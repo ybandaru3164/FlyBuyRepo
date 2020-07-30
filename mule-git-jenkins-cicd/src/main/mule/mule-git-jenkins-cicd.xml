@@ -4,10 +4,4 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="99a89adc-2662-4576-b9bf-25eb8901f850" >
-		<http:listener-connection host="0.0.0.0" port="8086" />
-	</http:listener-config>
-	<flow name="mule-git-jenkins-cicdFlow" doc:id="7f1b93f4-8de4-4b0d-ac07-87d16dc48df9" >
-		<http:listener doc:name="Listener" doc:id="d723702f-2a41-4728-84e0-854f395677fc" config-ref="HTTP_Listener_config" path="/test"/>
-	</flow>
 </mule>
