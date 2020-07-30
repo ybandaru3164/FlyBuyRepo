@@ -27,8 +27,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					 <standaloneDeployment>
-				      	<muleHome>${mule.home}</muleHome>
-				      	<muleVersion>${mule.version}</muleVersion>
+				      	<muleHome>C:\mule-enterprise-standalone-4.3.0</muleHome>
+				      	<muleVersion>4.3.0</muleVersion>
 				     </standaloneDeployment>
 				</configuration>
 			</plugin>
