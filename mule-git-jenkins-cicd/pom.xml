@@ -30,6 +30,7 @@
 				      	<muleVersion>4.3.0</muleVersion>
 				     </standaloneDeployment>
 				</configuration>
+				
 				<executions>
 					<execution>
 						<id>undeploy</id>
